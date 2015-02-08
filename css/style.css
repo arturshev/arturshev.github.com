@@ -12,6 +12,8 @@ h1{
     font-size: 40px;
 }
 h2{
+    margin-top: 10px;
+    margin-bottom: 10px;
     font-size: 30px;
     text-align: center;
 }
