@@ -75,3 +75,7 @@ a{
 .text-port {
     overflow: hidden; /*чтоб не сливалось с картинкой*/
 }
+footer{
+    height: 80px;
+    background: navy;
+}
