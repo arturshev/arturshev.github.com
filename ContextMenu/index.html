@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>ContextMenuDoc</title>
+	<link rel="stylesheet" href="ContextMenu.css">
+	<script src="ContextMenu.js"></script>
+	<style>
+		.left, .right{float: left; width: 50%; height: 400px;}
+		.left{background: #FAF855;}
+		.right{background: #4679BD;}
+	</style>
+</head>
+<body>
+<div class="left"></div> 
+<div class="right"></div>
+	<script>
+		(function() {
+			var menuExample = [{
+				title: 'File',
+				action: function () {console.log('open file')}
+			}, {
+				title: 'Edit',
+				action: function () {console.log('edit content')}
+			}, {	
+				title: 'More stuff',
+				submenu: [{
+					title: 'Send by email',
+					action: function () {console.log('emailed')}
+				}, {
+					title: 'Send via skype',
+					action: function () {console.log('skyped')}
+				}, {
+					title: 'Other',
+					submenu: [{
+						title: 'Other by email',
+						action: function () {console.log('Other emailed')}
+					}, {
+						title: 'Other via skype',
+						action: function () {console.log('Other skyped')}
+					}]
+				}]
+			},{
+				title: 'Exit',
+				action: function () {console.log('Exit');}
+			}];
+			
+			var menuExample2 = [{
+				title: 'File2',
+				action: function () {console.log('open file')}
+			}, {
+				title: 'Edit2',
+				action: function () {console.log('edit content')}
+			}, {	
+				title: 'More stuff2',
+				submenu: [{
+					title: 'Send by email',
+					action: function () {console.log('emailed')}
+				}, {
+					title: 'Send via skype',
+					action: function () {console.log('skyped')}
+				}, {
+					title: 'Other',
+					submenu: [{
+						title: 'Other by email',
+						action: function () {console.log('Other emailed')}
+					}, {
+						title: 'Other via skype',
+						action: function () {console.log('Other skyped')}
+					}]
+				}]
+			},{
+				title: 'Exit2',
+				action: function () {console.log('Exit');}
+			}];
+			window.cm = new ContextMenu(document.querySelector('.left'), menuExample);
+			window.cm = new ContextMenu(document.querySelector('.right'), menuExample2);
+
+		}());
+	</script>
+</body>
+</html>

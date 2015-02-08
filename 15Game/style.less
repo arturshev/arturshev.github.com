@@ -1,0 +1,53 @@
+@color:#F7A603;
+@color-free:#0665F8;
+@color-right:green;
+
+#content{
+	margin:5% auto;
+	width: 800px;
+	height: 800px;
+}
+
+.field{
+	width: 400px;
+	height: 400px;
+	border:10px solid blue;
+	background:@color-free;
+	float: left;
+}
+
+.field:after,.field:before{
+	display: block;
+	content: '';
+	clear: both;
+	overflow: hidden;
+}
+.field>div{
+	width: 100px;
+	height: 100px;
+	float:left;
+	border:1px solid black;
+	box-sizing:border-box;
+	text-align: center;
+	font-size: 24px;
+	font-weight: bold;
+	cursor:pointer;
+	padding-top: 30px;
+	background:@color;
+}
+.field .free{
+	background:@color-free;
+	color:transparent;
+}
+.field .right{
+	background: @color-right;
+}
+button{
+	height: 50px;
+	width: 150px;
+	margin-left: 10px;
+	background:#9dce2c;
+}
+.invis{
+	display: none;
+}

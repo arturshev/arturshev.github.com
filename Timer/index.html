@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Секундомер</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/main.css">
+	<script src="js/script.js"></script>
+</head>
+<body>
+	<div class="container"></div>
+	<div class="container-2"></div>
+	<!--	<div class="row">
+			<div class="col-xs-4">
+				<h2 class="stopwatch-current">00:00:00:000</h2>
+				<div class="stopwatch-laps">
+					<div class="alert alert-info">
+						00:10:11:196
+						<span class="label label-danger">×</span>
+					</div>
+					<div class="alert alert-info">
+						00:00:10:001
+						<span class="label label-danger">×</span>
+					</div>
+					<div class="alert alert-info">
+						00:00:01:015
+						<span class="label label-danger">×</span>
+					</div>
+				</div>
+			</div>
+			<div class="col-xs-4 stopwatch-controls">
+				<div class="btn-group btn-group-lg">
+					<button class="btn btn-primary">Start</button>
+					<button class="btn btn-info">Lap</button>
+				</div>
+				<button class="btn btn-danger btn-sm">Reset</button>
+			</div>
+		</div>-->
+
+	
+	<script>
+		(function(){
+			window.cm = new Timer(document.querySelector('.container'));
+			window.cm = new Timer(document.querySelector('.container-2'));
+		})();
+	</script>
+</body>
+</html>
