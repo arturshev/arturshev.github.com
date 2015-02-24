@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>TagList</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="jquery-1.11.2.min.js"></script>
+	<script src="script.js"></script>
+</head>
+<body>
+
+<div class="container">
+<!-- 	<div class="taglist">
+	<a href="" id="edit">Edit</a>
+	<div class="tagcontainer">
+		<div class="tag">
+			<div class="name">TAG1</div>
+			<div class="close">X</div>
+		</div>		
+	</div>
+	<form name="addTag">
+		<input type="text" name="text" placeholder="Enter Tag name">
+		<button type="submit">Add</button>
+	</form>
+
+</div> -->
+</div>
+
+<div class="container2">
+</div>
+
+<script>
+	var array1 =  ["123","qwe","2123","sad"];
+	var array2 =  ["aaa","bb","ccc"];
+	window.tl = new TagList(document.querySelector('.container'),array1 );
+	window.tl = new TagList(document.querySelector('.container'), array2 );
+	window.tl = new TagList(document.querySelector('.container') );
+</script>
+</body>
+</html>
