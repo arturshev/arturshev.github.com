@@ -80,6 +80,9 @@ a:hover{
     margin-bottom: 20px;
     margin-top: 20px;
 }
+.articles li{
+    margin: 10px;
+}
 .porfolio{
     padding: 20px 20px;
 }
