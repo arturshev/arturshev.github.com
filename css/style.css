@@ -32,6 +32,10 @@ a{
 .about{
     margin-top:50px;
 }
+a:hover{
+    color:green;
+}
+
 .text{
     float: left;
 }
