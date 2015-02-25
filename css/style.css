@@ -23,6 +23,10 @@ h3{
 a{
     color:black;
 }
+.mail{
+    text-decoration: none;
+}
+}
 .about{
     margin-top:50px;
 }
